@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <script>
+                let first, second;
+
+                rand = Math.random();
+
+                if(rand<0.20){
+                        first = "Star"
+                }
+                else if(rand<0.40 && rand>=0.20){
+                        first = "Moon"
+                }
+                else if(rand<0.60 && rand>=0.40){
+                        first = "River"
+                }
+                else if(rand<0.80 && rand>=0.60){
+                        first = "Mountain"
+                }
+                else {
+                        first = "Sky"
+                }
+
+
+                rand = Math.random();
+
+                if(rand<0.20){
+                        second = "Dream"
+                }
+                else if(rand<0.40 && rand>=0.20){
+                        second = "Whisper"
+                }
+                else if(rand<0.60 && rand>=0.40){
+                        second = "Harmony"
+                }
+                else if(rand<0.80 && rand>=0.60){
+                        second = "Fire"
+                }
+                else {
+                        second = "Light"
+                }
+
+                console.log(`${first} ${second}`)
+
+        </script>
+</body>
+</html>

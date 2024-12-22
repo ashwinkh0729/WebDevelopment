@@ -1,0 +1,6 @@
+terminal
+ipconfig
+copy ipv4
+paste on vs setting live preview host
+QR
+Scan

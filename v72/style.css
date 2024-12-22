@@ -1,0 +1,14 @@
+.container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+}
+.box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        border: 4px solid black;
+}
