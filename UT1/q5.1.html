@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+
+<body>
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        </head>
+
+        <body>
+                <div class="container">
+                        <h2>Number Processing</h2>
+                        <hr>
+                        <input id="no" type="number" placeholder="Enter Any Number...">
+                        <hr>
+                        <button onclick="process()" class="btn btn-success">Number Processing</button>
+                        <br>
+                        <hr>
+                        <span id="sp"></span>
+                        <hr>
+                </div>
+                <script>
+                        function process() {
+                                var n = parseInt(document.getElementById("no").value);
+                                if (n % 2 == 0) {
+                                        document.getElementById("sp").innerHTML = "Given number in Even.";
+                                }
+                                else {
+                                        document.getElementById("sp").innerHTML = "Given Number is Odd.";
+                                };
+                        }
+                </script>
+        </body>
+
+        </html>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn.even {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Number Processing</h2>
+        <hr>
+        <input id="no" type="number" placeholder="Enter Any Number...">
+        <hr>
+        <button onclick="process()" class="btn">Number Processing</button>
+        <br>
+        <hr>
+        <span id="sp"></span>
+        <hr>
+    </div>
+    <script>
+        function process() {
+            var n = parseInt(document.getElementById("no").value);
+            var button = document.querySelector('button');
+
+            if (n % 2 == 0) {
+                document.getElementById("sp").innerHTML = "Given number is Even.";
+                button.classList.add('even'); // Change button color when even
+            } else {
+                document.getElementById("sp").innerHTML = "Given Number is Odd.";
+                button.classList.remove('even'); // Revert back when odd
+            }
+        }
+    </script>
+</body>
+
+</html>

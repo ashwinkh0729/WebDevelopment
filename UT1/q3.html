@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Rowspan and Colspan</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Table with Rowspan and Colspan</h2>
+
+<table>
+    <tr>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Marks</th>
+        <th rowspan="2">Total</th>
+    </tr>
+    <tr>
+        <th>Math</th>
+        <th>Science</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>85</td>
+        <td>90</td>
+        <td>175</td>
+    </tr>
+    <tr>
+        <td>Emma</td>
+        <td>78</td>
+        <td>82</td>
+        <td>160</td>
+    </tr>
+    <tr>
+        <td rowspan="2">David</td>
+        <td>92</td>
+        <td>88</td>
+        <td>180</td>
+    </tr>
+    <tr>
+        <td colspan="2">Not Available</td>
+        <td>NA</td>
+    </tr>
+</table>
+
+</body>
+</html>
